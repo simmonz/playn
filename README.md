@@ -1,2 +1,2 @@
 # playn
-Various PlayN demos.
+Various [PlayN](playn.io) demos.
