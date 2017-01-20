@@ -19,10 +19,6 @@ public class Life extends SceneGame {
   private static int numRows;
   private static int numCols;
 
-  // The constant delay is the number of frames to skip between each generation.
-  // Decrease/increase this value to speed up / slow down procreation.
-  private final int delay = 5; 
-
   private int counter = 0;
 
   // used for initialization
@@ -75,7 +71,7 @@ public class Life extends SceneGame {
   }
 
   public Life (Platform plat) {
-    super(plat, 100); // update our "simulation" 33ms (30 times per second)
+    super(plat, 33); // update our "simulation" 33ms (30 times per second)
 
     // find out how big the game view is
     final IDimension size = plat.graphics().viewSize;
