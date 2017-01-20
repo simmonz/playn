@@ -1,0 +1,14 @@
+<module rename-to='physicsDemo'>
+  <inherits name='playn.Scene'/>
+  <inherits name='PhysicsDemoAssets'/>
+  <inherits name='tripleplay.TriplePlay'/>
+  <inherits name='org.jbox2d.JBox2D'/>
+
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='physicsDemo.html.PhysicsDemoHtml'/>
+</module>

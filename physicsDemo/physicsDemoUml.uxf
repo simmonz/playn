@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>430</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>KinematicRectangle
+--
+--
++KinematicRectangle: ctor
+#initRectanglePhysics: Body
+#initRectangleImage: ImageLayer
+#update: void
+#paint: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>620</y>
+      <w>190</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>RemovableEntity
+--
+--
++RemovableEntity: ctor
++RemovableEntity: ctor
+#isOffScreen: boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>60</y>
+      <w>400</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>PhysicsDemo
+--
+#world: World
+-player: Player
+-width, height: float
+#physicsWidth, physicsHeight: float
+#scale = 10f: float
+#bubbleTextures: BubbleTextures
+-nonRemovable = new ArrayList(): List&lt;MovingEntity&gt;
+-removable = new ArrayList(): List&lt;RemovableEntity&gt;
+-toRemove = new ArrayList(): List&lt;RemovableEntity&gt;
+-showDebugDrawGraphics = false: boolean
+--
++PhysicsDemo: ctor
++toSceneCoords: Vec2
++beginContact: void
++endContact: void
++preSolve: void
++postSolve: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>800</y>
+      <w>330</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+#anim: Animator
+-scale: float
+-HOR_VELOCITY = 8f: float
+-VERT_VELOCITY = 10f: float
+#numFeetContacts: int
+-jumpTimeout: int
+#xMultiplier = 1, desiredVx, desiredVy: float
+-running, standing: Flipbook
+--
+#Player: ctor
+#initPlayerPhysics: Body
+#initPlayerImage: ImageLayer
+#update: void
+#paint: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>800</y>
+      <w>260</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>DynamicRectangle
+--
+--
++DynamicRectangle: ctor
+#initRectangleImage: ImageLayer
+#initRectanglePhysics: Body</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>90</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>StaticRectangle
+--
+--
++StaticRectangle: ctor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>800</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Bubble
+--
+--
++Bubble: ctor
+#initBubbleImage: ImageLayer
+#initBubblePhysics: Body
+#update: void
+#paint: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>380</y>
+      <w>260</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>/MovingEntity/
+--
+#imageLayer: ImageLayer
+#body: Body
+-prevX, prevY, prevAngle: float
+--
++MovingEntity: ctor
++MovingEntity: ctor
+#initRectanglePhysics: Body
+#initRectangleImage: ImageLayer
+#initBubblePhysics: Body
+#initBubbleImage: ImageLayer
+#initPlayerPhysics: Body
+#initPlayerImage: ImageLayer
+#update: void
+#setPrevious: void
+#_paint: void
+#paint: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>190</y>
+      <w>380</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BubbleTextures
+--
+#sizes = new HashMap(): Map&lt;String, Float&gt;
+#bubbleTiles = new HashMap(): Map&lt;String, Tile&gt;
+--
++BubbleTextures: ctor
++BubbleTextures: ctor
++close: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1060</w>
+      <h>1060</h>
+    </coordinates>
+    <panel_attributes>physicsDemo.core
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>190</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>190</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>680</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>700</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>680</y>
+      <w>90</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>570</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;10.0;210.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>430</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>320</y>
+      <w>410</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..*</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;390.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>90</y>
+      <w>260</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>650</y>
+      <w>30</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>740</y>
+      <w>280</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>260.0;60.0;260.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>740</y>
+      <w>270</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>250.0;60.0;250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>500</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>750</x>
+      <y>530</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>The protected fields of
+MovingEntity are initialized
+in its subclasses so that
+those specifics of the sub-
+classes are available to
+MovingEntity and inter-
+mediate classes.</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
