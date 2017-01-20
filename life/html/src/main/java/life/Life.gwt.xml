@@ -1,0 +1,11 @@
+<module rename-to='life'>
+  <inherits name='playn.Scene'/>
+  <inherits name='LifeAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='life.html.LifeHtml'/>
+</module>
