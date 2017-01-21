@@ -1,0 +1,11 @@
+<module rename-to='vertletDemo'>
+  <inherits name='playn.Scene'/>
+  <inherits name='VertletDemoAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='vertletDemo.html.VertletDemoHtml'/>
+</module>
