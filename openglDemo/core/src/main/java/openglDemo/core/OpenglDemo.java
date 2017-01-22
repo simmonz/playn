@@ -13,6 +13,13 @@ import react.RFuture;
 import react.UnitSlot;
 import react.Slot;
 
+/**
+ * OpenGL hacking demo
+ *
+ * @author SSimmons
+ *         2016.05.01
+ * @version 1.0
+ */
 public class OpenglDemo extends SceneGame {
 
   final float width, height;

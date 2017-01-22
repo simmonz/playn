@@ -4,6 +4,13 @@ import playn.core.GL20;
 import playn.core.Texture;
 import pythagoras.f.AffineTransform;
 
+/**
+ * Generate a rotating batch
+ *
+ * @author SSimmons
+ *         2016.05.01
+ * @version 1.0
+ */
 public class RotatingBatch extends Triangle3dBatch {
 
   public float angle;

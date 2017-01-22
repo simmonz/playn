@@ -11,6 +11,10 @@
  * express or implied. See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/**
+ *  Modification 2015 by Scott Simmons
+ */ 
 package openglDemo.core;
 
 import pythagoras.f.AffineTransform;

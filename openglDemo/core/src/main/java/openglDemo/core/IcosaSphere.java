@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
 
+/**
+ * Generate and multiply subdivide an icosahedron, pushing the vertices out to a sphere.
+ *
+ * @author SSimmons
+ *         2016.05.01
+ * @version 1.0
+ */
 public class IcosaSphere {
   /*
    * A little math:
