@@ -7,7 +7,7 @@
     <version>2.0-rc3</version>
   </parent>
 
-  <groupId>com.github.simmonz.playn</groupId>
+  <groupId>com.github.sj-simmons.playn</groupId>
   <artifactId>openglDemo</artifactId>
   <version>0.1</version>
   <packaging>pom</packaging>
