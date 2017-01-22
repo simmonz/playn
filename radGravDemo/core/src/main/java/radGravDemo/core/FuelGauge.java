@@ -15,7 +15,14 @@ import playn.core.TextBlock;
 import playn.core.TextFormat;
 import playn.core.TextLayout;
 import playn.core.TextWrap;
-
+ 
+/**
+ * Fuel gauge class
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 class FuelGauge extends GroupLayer {
 
   private Tile[] tiles;

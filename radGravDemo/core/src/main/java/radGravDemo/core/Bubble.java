@@ -14,6 +14,13 @@ import playn.core.Tile;
 import playn.core.Platform;
 import playn.core.Clock;
 
+/**
+ * Bubble class
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 class Bubble extends RemovableEntity {
 
   Bubble (GroupLayer groupLayer, World world, String size, Vec2 position, Vec2 impulse) {

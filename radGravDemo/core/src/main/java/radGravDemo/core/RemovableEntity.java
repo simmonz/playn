@@ -6,9 +6,13 @@ import playn.scene.ImageLayer;
 import playn.scene.GroupLayer;
 import playn.core.Platform;
 
-/** 
+/**
  * A class for moving entities that should be removed for generic reasons.
- */ 
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 abstract class RemovableEntity extends MovingEntity {
 
   protected World world;

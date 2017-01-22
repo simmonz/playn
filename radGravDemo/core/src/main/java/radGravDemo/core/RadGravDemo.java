@@ -45,6 +45,13 @@ import playn.scene.CanvasLayer;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * Radial gravity demo
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 public class RadGravDemo extends SceneGame {
 
   // physWidth and physHeight are the dimensions of the physical universe.

@@ -18,6 +18,13 @@ import playn.core.Platform;
 import playn.scene.GroupLayer;
 import playn.core.Clock;
 
+/**
+ * Burner class
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 class Burner extends RemovableEntity {
 
   private Vec2 localInsidePoint, localOutsidePoint;

@@ -16,6 +16,13 @@ import playn.core.Clock;
 import playn.scene.GroupLayer;
 import playn.scene.ImageLayer;
 
+/**
+ * Planet class
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 public class Planet extends RemovableEntity {
 
   public Planet (Platform plat, GroupLayer groupLayer, World world, Vec2 position, float radius) {

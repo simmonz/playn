@@ -18,6 +18,13 @@ import playn.core.Platform;
 import playn.scene.GroupLayer;
 import playn.core.Clock;
 
+/**
+ * Fuselage class
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 class Fuselage extends RemovableEntity {
 
   Fuselage(Platform plat, GroupLayer groupLayer, World world, Vec2 position, Vec2 offset) {

@@ -1,5 +1,6 @@
 package radGravDemo.core;
 
+//JAVA REFERENCE IMPLEMENTATION OF IMPROVED NOISE - COPYRIGHT 2002 KEN PERLIN.
 public final class ImprovedNoise {
    static public double noise(double x, double y, double z) {
       int X = (int)Math.floor(x) & 255,                  // FIND UNIT CUBE THAT

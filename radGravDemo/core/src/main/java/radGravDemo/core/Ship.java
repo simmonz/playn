@@ -13,6 +13,13 @@ import playn.core.Keyboard;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * Ship class
+ *
+ * @author Scott Simmons
+ *         2016.04.20
+ * @version 1.0
+ */
 class Ship extends RemovableEntity {
 
   // how the ship is made:  rects for fuselage and left/right burner.
