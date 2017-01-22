@@ -20,6 +20,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Tearable fabric simulation
+ *
+ * @author Scott Simmons
+ *         2016.03.08
+ * @version 1.0
+ */
 public class VertletDemo extends SceneGame {
   
   static float width, height;

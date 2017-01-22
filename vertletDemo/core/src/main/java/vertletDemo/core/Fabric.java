@@ -11,6 +11,13 @@ import playn.scene.Layer;
 import playn.scene.GroupLayer;
 import playn.core.Surface;
 
+/**
+ * Fabric class 
+ *
+ * @author Scott Simmons
+ *         2016.03.08
+ * @version 1.0
+ */
 public class Fabric {
 
   static final Value<Float> accY = Value.create(.143f); 
