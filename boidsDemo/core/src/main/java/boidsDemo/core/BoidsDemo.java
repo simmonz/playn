@@ -25,7 +25,7 @@ import playn.core.Canvas;
 /**
  * Flappy Boids!
  *
- * @author SSimmons
+ * @author Scott Simmons
  *         2016.02.08
  * @version 1.0
  */

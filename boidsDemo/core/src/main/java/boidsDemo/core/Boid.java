@@ -23,7 +23,7 @@ import static java.lang.Math.random;
  * Use this class in conjunction with a subclass of {@link Boids}, an instance
  * of which is a list of boids that flock together.
  *
- * @author SSimmons
+ * @author Scott Simmons
  *         2016-02-08
  */
 public abstract class Boid {

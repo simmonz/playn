@@ -7,7 +7,7 @@ import java.lang.Math.*;
 *
 * <P> Vector math, geometry, and functions.
 * 
-* @author  SSimmons
+* @author  Scott Simmons
 * @version 2016-02-01
 */
 public class Vector2D {

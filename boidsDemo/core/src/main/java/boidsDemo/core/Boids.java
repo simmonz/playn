@@ -3,6 +3,13 @@ package boidsDemo.core;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A flock of boids
+ *
+ * @author Scott Simmons
+ *         2016.02.08
+ * @version 1.0
+ */
 public abstract class Boids<T extends Boid> {
 
   List<T> list;
