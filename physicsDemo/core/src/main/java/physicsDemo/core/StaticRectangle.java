@@ -10,6 +10,13 @@ import playn.scene.GroupLayer;
 import playn.scene.Layer;
 import playn.core.Surface;
 
+/**
+ * Static rectangle class
+ *
+ * @author Scott Simmons
+ *         2016.03.01
+ * @version 1.0
+ */
 class StaticRectangle {
 
   /**

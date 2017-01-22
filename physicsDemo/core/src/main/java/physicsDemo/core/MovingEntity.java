@@ -9,11 +9,18 @@ import playn.scene.GroupLayer;
 import playn.core.Platform;
 import playn.core.Clock;
 
+/**
+ * Moving entity class 
+ *
+ * @author Scott Simmons
+ *         2016.03.01
+ * @version 1.0
+ */
+abstract class MovingEntity {
 /** 
  * Any moving entity has to be updated in some way:  either it's position or velocity or the way 
  * is image is constructed, or all of those.
  */ 
-abstract class MovingEntity {
 
   ImageLayer imageLayer;
   Body body;

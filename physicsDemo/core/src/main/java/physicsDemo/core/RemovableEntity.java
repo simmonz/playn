@@ -7,7 +7,11 @@ import playn.core.Platform;
 
 /** 
  * A class for moving entities that should be removed for generic reasons.
- */ 
+ *
+ * @author Scott Simmons
+ *         2016.03.01
+ * @version 1.0
+ */
 abstract class RemovableEntity extends MovingEntity {
 
   // constructor for player and rectangles

@@ -24,7 +24,13 @@ import tripleplay.util.SimpleFrames;
 import tripleplay.anim.Animator;
 import tripleplay.anim.Animation.Flip;
 
-
+/**
+ * Player class 
+ *
+ * @author Scott Simmons
+ *         2016.03.01
+ * @version 1.0
+ */
 class Player extends RemovableEntity {
 
   Animator anim; 

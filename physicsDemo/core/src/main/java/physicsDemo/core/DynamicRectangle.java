@@ -15,6 +15,13 @@ import playn.core.Texture;
 import playn.core.Platform;
 import playn.core.Clock;
 
+/**
+ * Dynamic rectangle class 
+ *
+ * @author Scott Simmons
+ *         2016.03.01
+ * @version 1.0
+ */
 class DynamicRectangle extends RemovableEntity {
 
   /**

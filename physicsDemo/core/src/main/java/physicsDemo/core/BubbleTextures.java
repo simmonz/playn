@@ -9,6 +9,13 @@ import playn.core.Tile;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * BubbleTextures class 
+ *
+ * @author Scott Simmons
+ *         2016.03.01
+ * @version 1.0
+ */
 class BubbleTextures extends GroupLayer {
 
   static final Map<String, Float> sizes = new HashMap<String, Float>();
