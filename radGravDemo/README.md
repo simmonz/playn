@@ -1,9 +1,9 @@
 
-Half-baked demo in which JBox2D [PlayN](http://playn.io) is used to simulate jet-propulsion. 
+Half-baked demo [PlayN](http://playn.io) in which JBox2D is used to simulate jet-propulsion. 
 
 To build and run using [Maven](maven.apache.org):
 ```
 cd playn/radGravDemo
 mvn test -Pjava
 ```
-Use the arrow keys to burn left, right, or both, and `d` and `f` to zoom in and out.  
+Use the left/right arrow keys to burn left, right, or up to burn both, and `d` and `f` to zoom in and out.  
