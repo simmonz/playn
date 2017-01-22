@@ -1,0 +1,11 @@
+<module rename-to='openglDemo'>
+  <inherits name='playn.Scene'/>
+  <inherits name='OpenglDemoAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='openglDemo.html.OpenglDemoHtml'/>
+</module>

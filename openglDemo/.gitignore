@@ -1,0 +1,8 @@
+
+*.swp
+
+android/assets/
+ios/assets/
+assets/target/
+core/target/
+java/target/
