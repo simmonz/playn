@@ -51,6 +51,8 @@ import java.util.ArrayList;
  * @author Scott Simmons
  *         2016.04.20
  * @version 1.0
+ *
+ * Copyright 2016 Scott Simmons
  */
 public class RadGravDemo extends SceneGame {
 

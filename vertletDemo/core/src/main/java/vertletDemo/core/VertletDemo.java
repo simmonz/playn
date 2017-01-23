@@ -26,6 +26,8 @@ import java.util.Map;
  * @author Scott Simmons
  *         2016.03.08
  * @version 1.0
+ * 
+ * Copyright 2016 Scott Simmons
  */
 public class VertletDemo extends SceneGame {
   
