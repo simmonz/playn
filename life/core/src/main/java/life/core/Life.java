@@ -70,8 +70,9 @@ public class Life extends SceneGame {
     }
   }
 
+
   public Life (Platform plat) {
-    super(plat, 33); // update our "simulation" 33ms (30 times per second)
+    super(plat, 30); // update our "simulation" 33ms (30 times per second)
 
     // find out how big the game view is
     final IDimension size = plat.graphics().viewSize;
@@ -94,6 +95,9 @@ public class Life extends SceneGame {
       }
     });
 
+    final GroupLayer aGeneration = new GroupLayer();
+    rootLayer.add(aGeneration);
+
     cells.initializeRandomly();
 
     update.connect(new Slot<Clock>() {
@@ -105,7 +109,8 @@ public class Life extends SceneGame {
     paint.connect(new Slot<Clock>() {
       @Override public void onEmit (Clock clock) {
         // draw the next generation
-        rootLayer.add(new Layer() {
+        aGeneration.disposeAll();
+        aGeneration.add(new Layer() {
           protected void paintImpl (Surface surf) {
             for (int i = 0; i < numRows; i++) 
               for (int j = 0; j < numCols; j++) 
