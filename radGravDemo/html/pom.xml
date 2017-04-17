@@ -60,6 +60,13 @@
     </dependency>
 
     <dependency>
+      <groupId>org.jbox2d</groupId>
+      <artifactId>jbox2d-library</artifactId>
+      <version>${jbox2d.version}</version>
+      <classifier>sources</classifier>
+    </dependency>
+
+    <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-codeserver</artifactId>
       <version>${gwt.version}</version>
